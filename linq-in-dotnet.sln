@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq.Core", "Linq.Core\Linq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq.Filtering", "Linq.Filtering\Linq.Filtering.csproj", "{2F9FB109-616E-4CBB-9898-B70A370C9B89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq.OfType", "Linq.OfType\Linq.OfType.csproj", "{46C5C237-DAA3-49B6-A0AC-A5475F48AF4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{2F9FB109-616E-4CBB-9898-B70A370C9B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F9FB109-616E-4CBB-9898-B70A370C9B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F9FB109-616E-4CBB-9898-B70A370C9B89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C5C237-DAA3-49B6-A0AC-A5475F48AF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C5C237-DAA3-49B6-A0AC-A5475F48AF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C5C237-DAA3-49B6-A0AC-A5475F48AF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C5C237-DAA3-49B6-A0AC-A5475F48AF4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

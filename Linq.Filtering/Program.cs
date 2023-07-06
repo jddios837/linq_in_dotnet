@@ -19,4 +19,24 @@ var OddNumbersWithIndexPosition = intList
 foreach (var item in OddNumbersWithIndexPosition)
 {
     Console.WriteLine($"IndexPosition : {item.IndexPosition} , Value: {item.Number}");
-}    
+}
+
+List<Employee> employeesList = Employee.GetEmployees();
+
+var MethodSyntax = employeesList
+    .Select((Data, index) => new { employee = Data, Index = index})
+    .Where(emp => emp.employee.Salary >= 500000 && emp.employee.Gender == "Male")
+    .Select(emp => new
+    {
+        EmployeeName = emp.employee.Name,
+        Gender = emp.employee.Gender,
+        Salary = emp.employee.Salary,
+        IndexPosition = emp.Index
+    })
+    .ToList();
+
+foreach (var emp in MethodSyntax)
+{
+    Console.WriteLine($"Position : { emp.IndexPosition } Name: { emp.EmployeeName }, " +
+                      $"Gender: { emp.Gender }, Salary: {emp.Salary}");
+}  
